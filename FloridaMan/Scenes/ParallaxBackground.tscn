@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Textures/CloudTexture.jpg" type="Texture" id=1]
+[ext_resource path="res://ParallaxBackground.gd" type="Script" id=2]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+layer = 0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 1496.0 ]
+}
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+show_behind_parent = true
+motion_mirroring = Vector2( 0, 1500 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxLayer"]
+show_behind_parent = true
+position = Vector2( -1645.69, -436.117 )
+rotation = 0.785398
+scale = Vector2( 0.1, 0.1 )
+z_index = -1
+texture = ExtResource( 1 )
+offset = Vector2( 16240.9, -10144 )
+
+[node name="Sprite2" type="Sprite" parent="ParallaxLayer"]
+show_behind_parent = true
+position = Vector2( -1446, -1211 )
+rotation = 0.785398
+scale = Vector2( 0.1, 0.1 )
+z_index = -1
+texture = ExtResource( 1 )
+offset = Vector2( 16240.9, -10144 )
+
+[node name="Sprite3" type="Sprite" parent="ParallaxLayer"]
+show_behind_parent = true
+position = Vector2( -1061, -886 )
+rotation = 0.785398
+scale = Vector2( 0.1, 0.1 )
+z_index = -1
+texture = ExtResource( 1 )
+offset = Vector2( 16240.9, -10144 )
+
+[node name="Sprite4" type="Sprite" parent="ParallaxLayer"]
+show_behind_parent = true
+position = Vector2( -1208, -149 )
+rotation = 0.785398
+scale = Vector2( 0.1, 0.1 )
+z_index = -1
+texture = ExtResource( 1 )
+offset = Vector2( 16240.9, -10144 )
